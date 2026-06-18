@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="p:domain_verify" content="cb0ee40dad3e172198e447a65edf280f"/>
+<title>Templix — Resume, Cover Letter & LinkedIn Templates | Instant Download</title>
+<style>
+  :root {
+    --ink:      #1e1b2e;
+    --purple:   #6C5CE7;
+    --violet:   #a78bfa;
+    --lavender: #ede9fe;
+    --paper:    #faf8f5;
+    --stone:    #78716c;
+    --charcoal: #334155;
+    --amber:    #f59e0b;
+    --emerald:  #10b981;
+    --border:   #e8e4dd;
+    --card-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.06);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: var(--paper); color: var(--charcoal); line-height: 1.6; }
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+
+  /* Nav */
+  nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 0; }
+  .nav-logo { display: flex; align-items: center; gap: 10px; font-family: 'Georgia', serif; font-size: 22px; font-weight: 700; color: var(--ink); text-decoration: none; letter-spacing: -0.5px; }
+  .nav-logo span { color: var(--purple); }
+  .nav-cta { background: var(--purple); color: #fff; padding: 10px 20px; border-radius: 8px; font-weight: 600; text-decoration: none; font-size: 14px; }
+
+  /* Hero */
+  .hero { padding: 80px 0 60px; text-align: center; }
+  .hero .badge { display: inline-block; padding: 6px 16px; background: var(--lavender); color: var(--purple); border-radius: 20px; font-size: 13px; font-weight: 600; margin-bottom: 20px; letter-spacing: 0.5px; }
+  .hero h1 { font-family: 'Georgia', serif; font-size: 56px; line-height: 1.1; letter-spacing: -1.5px; color: var(--ink); margin-bottom: 20px; }
+  .hero h1 b { color: var(--purple); }
+  .hero .sub { font-size: 18px; color: var(--stone); max-width: 550px; margin: 0 auto 36px; }
+  .hero .quick-stats { display: flex; justify-content: center; gap: 48px; margin-top: 16px; }
+  .hero .stat { text-align: center; }
+  .hero .stat-num { font-size: 28px; font-weight: 700; color: var(--ink); }
+  .hero .stat-label { font-size: 13px; color: var(--stone); }
+
+  /* Bundle */
+  .bundle { background: linear-gradient(135deg, var(--ink) 0%, #2d2b3d 100%); border-radius: 20px; padding: 40px 48px; color: #fff; display: flex; justify-content: space-between; align-items: center; margin-bottom: 48px; }
+  .bundle .tag { display: inline-block; padding: 4px 14px; background: rgba(255,255,255,0.1); border-radius: 20px; font-size: 12px; letter-spacing: 1px; margin-bottom: 12px; }
+  .bundle h3 { font-family: 'Georgia', serif; font-size: 24px; margin-bottom: 4px; }
+  .bundle p { font-size: 14px; opacity: 0.6; }
+  .bundle .bundle-price { font-family: 'Georgia', serif; font-size: 38px; font-weight: 700; }
+  .bundle .bundle-price s { font-size: 18px; opacity: 0.4; font-weight: 400; margin-right: 8px; }
+  .bundle .bundle-save { font-size: 13px; color: var(--violet); }
+  .bundle-cta { background: var(--purple); color: #fff; padding: 14px 36px; border-radius: 10px; font-weight: 700; text-decoration: none; font-size: 16px; transition: filter 0.2s; }
+  .bundle-cta:hover { filter: brightness(1.1); }
+
+  /* Products Grid */
+  .section-title { font-family: 'Georgia', serif; font-size: 32px; text-align: center; color: var(--ink); margin-bottom: 40px; letter-spacing: -0.5px; }
+  .products { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 80px; }
+  .product-card { background: #fff; border-radius: 16px; overflow: hidden; border: 1px solid var(--border); box-shadow: var(--card-shadow); transition: transform 0.25s, box-shadow 0.25s; position: relative; }
+  .product-card:hover { transform: translateY(-6px); box-shadow: 0 12px 40px rgba(0,0,0,0.1); }
+  .product-card.best { border-color: var(--purple); }
+  .best-badge { position: absolute; top: 12px; right: 12px; background: var(--purple); color: #fff; padding: 4px 12px; border-radius: 6px; font-size: 11px; font-weight: 700; z-index: 2; }
+
+  .product-preview { height: 260px; display: flex; align-items: center; justify-content: center; padding: 28px; }
+  .product-body { padding: 0 28px 28px; }
+  .product-body h3 { font-family: 'Georgia', serif; font-size: 18px; color: var(--ink); margin-bottom: 6px; }
+  .product-body .desc { font-size: 13px; color: var(--stone); line-height: 1.5; margin-bottom: 18px; min-height: 40px; }
+  .product-body .highlights { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 20px; }
+  .product-body .hl { font-size: 11px; padding: 4px 10px; border-radius: 6px; background: var(--paper); color: var(--stone); }
+  .product-footer { display: flex; justify-content: space-between; align-items: center; }
+  .price { font-family: 'Georgia', serif; font-size: 26px; font-weight: 700; color: var(--ink); }
+  .price small { font-size: 13px; color: var(--stone); font-weight: 400; }
+  .buy-btn { background: var(--purple); color: #fff; padding: 10px 22px; border-radius: 8px; font-weight: 600; text-decoration: none; font-size: 14px; transition: filter 0.2s; }
+  .buy-btn:hover { filter: brightness(1.1); }
+
+  /* Trust strip */
+  .trust { display: flex; justify-content: center; gap: 60px; padding: 40px 0 60px; border-top: 1px solid var(--border); }
+  .trust-item { text-align: center; }
+  .trust-icon { font-size: 28px; margin-bottom: 8px; }
+  .trust-item h4 { font-size: 14px; color: var(--ink); margin-bottom: 2px; }
+  .trust-item p { font-size: 12px; color: var(--stone); }
+
+  /* FAQ */
+  .faq { max-width: 700px; margin: 0 auto; padding: 0 24px 80px; }
+  .faq h2 { font-family: 'Georgia', serif; font-size: 32px; color: var(--ink); text-align: center; margin-bottom: 48px; letter-spacing: -0.5px; }
+  .faq-item { border-bottom: 1px solid var(--border); padding: 24px 0; }
+  .faq-item h4 { font-size: 16px; color: var(--ink); margin-bottom: 8px; cursor: pointer; }
+  .faq-item p { font-size: 14px; color: var(--stone); }
+
+  footer { text-align: center; padding: 48px 24px; color: var(--stone); font-size: 13px; border-top: 1px solid var(--border); }
+
+  @media (max-width: 768px) {
+    .hero h1 { font-size: 34px; }
+    .hero .quick-stats { gap: 24px; }
+    .products { grid-template-columns: 1fr; }
+    .bundle { flex-direction: column; text-align: center; gap: 20px; }
+    .trust { gap: 24px; flex-wrap: wrap; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <nav>
+    <a class="nav-logo" href="#">
+      <svg width="34" height="34" viewBox="0 0 512 512"><rect width="512" height="512" rx="112" fill="#1e1b2e"/><g transform="translate(136,88)"><rect width="240" height="76" rx="14" fill="#a78bfa" opacity=".92"/><rect x="32" y="22" width="120" height="7" rx="3.5" fill="#fff" opacity=".3"/><rect x="32" y="38" width="160" height="7" rx="3.5" fill="#fff" opacity=".18"/><rect x="32" y="54" width="100" height="7" rx="3.5" fill="#fff" opacity=".12"/></g><g transform="translate(218,164)"><rect width="76" height="212" rx="16" fill="#6C5CE7"/></g><circle cx="256" cy="320" r="9" fill="#f59e0b" opacity=".9"/></svg>
+      <span>Templix</span>
+    </a>
+    <a class="nav-cta" href="#products">Shop Templates</a>
+  </nav>
+
+  <section class="hero">
+    <div class="badge">📄 Professional Career Templates</div>
+    <h1>Your career deserves<br>better than <b>default</b>.</h1>
+    <p class="sub">Designed to pass ATS filters, impress recruiters, and land more interviews. No design skills needed — just edit and apply.</p>
+    <div class="quick-stats">
+      <div class="stat"><div class="stat-num">3</div><div class="stat-label">Premium Templates</div></div>
+      <div class="stat"><div class="stat-num">Canva</div><div class="stat-label">Free Editor</div></div>
+      <div class="stat"><div class="stat-num">Instant</div><div class="stat-label">Download</div></div>
+    </div>
+  </section>
+
+  <!-- Bundle -->
+  <section class="bundle">
+    <div>
+      <div class="tag">BEST VALUE</div>
+      <h3>Complete Career Bundle</h3>
+      <p>Resume + Cover Letter + LinkedIn Banner — all three, one price.</p>
+    </div>
+    <div style="text-align:center">
+      <div class="bundle-price"><s>$25.97</s> $15.99</div>
+      <div class="bundle-save">Save $9.98 · 38% off</div>
+    </div>
+    <a class="bundle-cta" href="#products">Get All Three ↓</a>
+  </section>
+
+  <!-- Products -->
+  <h2 class="section-title" id="products">Choose Your Template</h2>
+  <section class="products">
+
+    <!-- Resume -->
+    <div class="product-card best">
+      <div class="best-badge">BESTSELLER</div>
+      <div class="product-preview" style="background:var(--paper)">
+        <div style="width:100%">
+          <div style="height:11px;background:#ddd;border-radius:3px;margin-bottom:7px;width:50%"></div>
+          <div style="height:6px;background:#e8e7e5;border-radius:2px;margin-bottom:5px;width:30%"></div>
+          <div style="height:14px"></div>
+          <div style="height:5px;background:#f0efed;border-radius:2px;margin-bottom:5px"></div>
+          <div style="height:7px;background:#e8e7e5;border-radius:2px;margin-bottom:5px;width:70%"></div>
+          <div style="height:7px;background:#e8e7e5;border-radius:2px;margin-bottom:5px;width:65%"></div>
+          <div style="height:7px;background:#e8e7e5;border-radius:2px;margin-bottom:5px;width:60%"></div>
+          <div style="height:14px"></div>
+          <div style="height:5px;background:#f0efed;border-radius:2px;margin-bottom:5px"></div>
+          <div style="height:7px;background:#e8e7e5;border-radius:2px;margin-bottom:5px;width:80%"></div>
+          <div style="height:7px;background:#e8e7e5;border-radius:2px;margin-bottom:5px;width:75%"></div>
+          <div style="height:7px;background:#e8e7e5;border-radius:2px;margin-bottom:5px;width:55%"></div>
+          <div style="height:14px"></div>
+          <div style="height:5px;background:#f0efed;border-radius:2px;margin-bottom:5px"></div>
+          <div style="height:7px;background:#e8e7e5;border-radius:2px;margin-bottom:5px;width:65%"></div>
+          <div style="height:7px;background:#e8e7e5;border-radius:2px;margin-bottom:5px;width:45%"></div>
+        </div>
+      </div>
+      <div class="product-body">
+        <h3>ATS-Friendly Resume</h3>
+        <p class="desc">The one that gets past the robots. Clean layout tested on 6 major ATS platforms.</p>
+        <div class="highlights">
+          <span class="hl">ATS-Tested</span><span class="hl">Canva Editable</span><span class="hl">1-Page</span><span class="hl">+ Bonus PDF</span>
+        </div>
+        <div class="product-footer">
+          <span class="price">$9.99 <small>USD</small></span>
+          <a class="buy-btn" href="https://payhip.com/b/SAnBO">Get This</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cover Letter -->
+    <div class="product-card">
+      <div class="product-preview" style="background:var(--paper)">
+        <div style="width:100%">
+          <div style="height:9px;background:#ddd;border-radius:3px;margin-bottom:5px;width:35%"></div>
+          <div style="height:5px;background:#e8e7e5;border-radius:2px;margin-bottom:3px;width:50%"></div>
+          <div style="height:5px;background:#e8e7e5;border-radius:2px;margin-bottom:3px;width:45%"></div>
+          <div style="height:16px"></div>
+          <div style="height:5px;background:#f0efed;border-radius:2px;margin-bottom:5px;width:80%"></div>
+          <div style="height:7px;background:#e8e7e5;border-radius:2px;margin-bottom:4px;width:95%"></div>
+          <div style="height:7px;background:#e8e7e5;border-radius:2px;margin-bottom:4px;width:90%"></div>
+          <div style="height:7px;background:#e8e7e5;border-radius:2px;margin-bottom:4px;width:85%"></div>
+          <div style="height:16px"></div>
+          <div style="height:7px;background:#e8e7e5;border-radius:2px;margin-bottom:4px;width:95%"></div>
+          <div style="height:7px;background:#e8e7e5;border-radius:2px;margin-bottom:4px;width:88%"></div>
+          <div style="height:7px;background:#e8e7e5;border-radius:2px;margin-bottom:4px;width:92%"></div>
+          <div style="height:16px"></div>
+          <div style="display:flex;justify-content:flex-end">
+            <div style="height:9px;background:#6C5CE7;border-radius:3px;width:25%"></div>
+          </div>
+        </div>
+      </div>
+      <div class="product-body">
+        <h3>Cover Letter Template</h3>
+        <p class="desc">Matching design with built-in prompts. No more staring at a blank page.</p>
+        <div class="highlights">
+          <span class="hl">Matching Style</span><span class="hl">Prompts Inside</span><span class="hl">Canva</span><span class="hl">+ Bonus PDF</span>
+        </div>
+        <div class="product-footer">
+          <span class="price">$7.99 <small>USD</small></span>
+          <a class="buy-btn" href="https://payhip.com/b/WF6o5">Get This</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- LinkedIn -->
+    <div class="product-card">
+      <div class="product-preview" style="background:var(--ink);display:flex;align-items:center;justify-content:center">
+        <div style="text-align:center;width:100%">
+          <div style="font-size:18px;font-weight:700;color:#fff;margin-bottom:4px">YOUR NAME</div>
+          <div style="font-size:11px;color:var(--violet);margin-bottom:16px">Senior [Title] at [Company]</div>
+          <div style="display:flex;gap:6px;justify-content:center">
+            <span style="padding:3px 10px;border-radius:4px;background:rgba(255,255,255,0.08);color:rgba(255,255,255,0.5);font-size:10px">Gradient</span>
+            <span style="padding:3px 10px;border-radius:4px;background:rgba(255,255,255,0.08);color:rgba(255,255,255,0.5);font-size:10px">Minimalist</span>
+            <span style="padding:3px 10px;border-radius:4px;background:rgba(255,255,255,0.08);color:rgba(255,255,255,0.5);font-size:10px">Dark</span>
+          </div>
+        </div>
+      </div>
+      <div class="product-body">
+        <h3>LinkedIn Banner — 3 Pack</h3>
+        <p class="desc">6× more profile views with a custom banner. Three layouts, perfectly sized.</p>
+        <div class="highlights">
+          <span class="hl">3 Designs</span><span class="hl">1584×396</span><span class="hl">Canva</span><span class="hl">+ Headline Guide</span>
+        </div>
+        <div class="product-footer">
+          <span class="price">$7.99 <small>USD</small></span>
+          <a class="buy-btn" href="https://payhip.com/b/xGi0X">Get This</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Trust -->
+  <section class="trust">
+    <div class="trust-item">
+      <div class="trust-icon">📥</div>
+      <h4>Instant Download</h4>
+      <p>Files delivered immediately after purchase</p>
+    </div>
+    <div class="trust-item">
+      <div class="trust-icon">🎨</div>
+      <h4>No Design Skills</h4>
+      <p>Edit everything in Canva's free editor</p>
+    </div>
+    <div class="trust-item">
+      <div class="trust-icon">🔄</div>
+      <h4>Lifetime Access</h4>
+      <p>Buy once. Download forever. No subscriptions.</p>
+    </div>
+    <div class="trust-item">
+      <div class="trust-icon">💬</div>
+      <h4>Need Help?</h4>
+      <p>Reply to your receipt email anytime</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <h2>Quick Questions</h2>
+    <div class="faq-item">
+      <h4>What software do I need?</h4>
+      <p>None. All templates open in Canva's free editor. You can also use Google Docs or Microsoft Word.</p>
+    </div>
+    <div class="faq-item">
+      <h4>Will this pass ATS filters?</h4>
+      <p>Yes. No tables, no images, no multi-column layouts. The structure is built for automated screening software.</p>
+    </div>
+    <div class="faq-item">
+      <h4>Can I change the colors and fonts?</h4>
+      <p>Everything is editable — colors, fonts, spacing, section names. Make it yours in minutes.</p>
+    </div>
+    <div class="faq-item">
+      <h4>What if I don't like it?</h4>
+      <p>If the template doesn't work for you, reply to your receipt and we'll make it right. No questions asked.</p>
+    </div>
+  </section>
+
+  <footer>&copy; 2026 Templix. All rights reserved.</footer>
+</div>
+
+</body>
+</html>
