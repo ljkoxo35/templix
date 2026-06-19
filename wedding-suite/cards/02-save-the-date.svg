@@ -1,22 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 500">
   <defs>
-    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#c9ad60"/><stop offset="30%" stop-color="#e8d898"/><stop offset="60%" stop-color="#c9ad60"/><stop offset="100%" stop-color="#a88830"/></linearGradient>
-    <linearGradient id="olive" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#7d8f50"/><stop offset="100%" stop-color="#556a30"/></linearGradient>
-    <linearGradient id="olive2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#8f9f60"/><stop offset="100%" stop-color="#667a40"/></linearGradient>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#fefcfa"/><stop offset="100%" stop-color="#f6f2e8"/></linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#c9ad60"/><stop offset="50%" stop-color="#e8d898"/><stop offset="100%" stop-color="#a88830"/></linearGradient>
+    <radialGradient id="vignette" cx="50%" cy="50%" r="70%"><stop offset="0%" stop-color="#fefcfa"/><stop offset="100%" stop-color="#f0e8d4"/></radialGradient>
   </defs>
-  <rect width="700" height="500" fill="url(#bg)"/>
-  <rect x="28" y="28" width="644" height="444" fill="none" stroke="url(#gold)" stroke-width="1.5"/>
-  <rect x="36" y="36" width="628" height="428" fill="none" stroke="url(#gold)" stroke-width="0.5" opacity="0.4"/>
-  <g transform="translate(32,32)"><path d="M0,40 C0,15 15,0 40,0" fill="none" stroke="url(#gold)" stroke-width="1.5"/></g>
-  <g transform="translate(668,32) scale(-1,1)"><path d="M0,40 C0,15 15,0 40,0" fill="none" stroke="url(#gold)" stroke-width="1.5"/></g>
-  <g transform="translate(32,468) scale(1,-1)"><path d="M0,40 C0,15 15,0 40,0" fill="none" stroke="url(#gold)" stroke-width="1.5"/></g>
-  <g transform="translate(668,468) scale(-1,-1)"><path d="M0,40 C0,15 15,0 40,0" fill="none" stroke="url(#gold)" stroke-width="1.5"/></g>
-  <text x="350" y="110" text-anchor="middle" font-family="Georgia,serif" font-size="13" fill="#8a8050" letter-spacing="5">SAVE THE DATE</text>
-  <text x="350" y="200" text-anchor="middle" font-family="Georgia,serif" font-size="42" fill="#3a3a2a" letter-spacing="2" font-style="italic">Emily &amp; James</text>
-  <line x1="290" y1="220" x2="410" y2="220" stroke="url(#gold)" stroke-width="1"/>
-  <text x="350" y="300" text-anchor="middle" font-family="Georgia,serif" font-size="32" fill="#3a3a2a" letter-spacing="4">26 · 09 · 2026</text>
-  <text x="350" y="340" text-anchor="middle" font-family="Georgia,serif" font-size="12" fill="#7a7058" letter-spacing="2">NEWPORT · RHODE ISLAND</text>
-  <text x="350" y="390" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#b8a888" letter-spacing="2" font-style="italic">Formal invitation to follow</text>
-  <text x="350" y="460" text-anchor="middle" font-family="Georgia,serif" font-size="8" fill="#c0b090" letter-spacing="4">LUXE TEMPLATES</text>
+  <rect width="700" height="500" fill="url(#vignette)"/>
+  <rect x="24" y="24" width="652" height="452" fill="none" stroke="url(#gold)" stroke-width="2"/>
+  <g transform="translate(30,30)"><path d="M0,50 C0,18 18,0 50,0" fill="none" stroke="url(#gold)" stroke-width="1.5"/></g>
+  <g transform="translate(670,30) scale(-1,1)"><path d="M0,50 C0,18 18,0 50,0" fill="none" stroke="url(#gold)" stroke-width="1.5"/></g>
+  <g transform="translate(30,470) scale(1,-1)"><path d="M0,50 C0,18 18,0 50,0" fill="none" stroke="url(#gold)" stroke-width="1.5"/></g>
+  <g transform="translate(670,470) scale(-1,-1)"><path d="M0,50 C0,18 18,0 50,0" fill="none" stroke="url(#gold)" stroke-width="1.5"/></g>
+  <text x="350" y="115" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#8a8050" letter-spacing="6">SAVE THE DATE</text>
+  <text x="350" y="200" text-anchor="middle" font-family="Georgia,serif" font-size="46" fill="#3a3a2a" letter-spacing="2" font-style="italic">Emily &amp; James</text>
+  <line x1="270" y1="225" x2="430" y2="225" stroke="url(#gold)" stroke-width="1.5"/>
+  <text x="350" y="315" text-anchor="middle" font-family="Georgia,serif" font-size="36" fill="#3a3a2a" letter-spacing="6">26 · 09 · 2026</text>
+  <text x="350" y="360" text-anchor="middle" font-family="Georgia,serif" font-size="13" fill="#7a7058" letter-spacing="3">NEWPORT · RHODE ISLAND</text>
+  <text x="350" y="420" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#b8a888" letter-spacing="2" font-style="italic">Formal invitation to follow</text>
 </svg>
