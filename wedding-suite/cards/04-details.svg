@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 500">
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#c9ad60"/><stop offset="50%" stop-color="#e8d898"/><stop offset="100%" stop-color="#a88830"/></linearGradient>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#fefcfa"/><stop offset="100%" stop-color="#f6f2e8"/></linearGradient>
+  </defs>
+  <rect width="700" height="500" fill="url(#bg)"/>
+  <rect x="28" y="28" width="644" height="444" fill="none" stroke="url(#gold)" stroke-width="1.5"/>
+  <g transform="translate(32,32)"><path d="M0,40 C0,15 15,0 40,0" fill="none" stroke="url(#gold)" stroke-width="1.5"/></g>
+  <g transform="translate(668,32) scale(-1,1)"><path d="M0,40 C0,15 15,0 40,0" fill="none" stroke="url(#gold)" stroke-width="1.5"/></g>
+  <g transform="translate(32,468) scale(1,-1)"><path d="M0,40 C0,15 15,0 40,0" fill="none" stroke="url(#gold)" stroke-width="1.5"/></g>
+  <g transform="translate(668,468) scale(-1,-1)"><path d="M0,40 C0,15 15,0 40,0" fill="none" stroke="url(#gold)" stroke-width="1.5"/></g>
+  <text x="350" y="110" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#3a3a2a" letter-spacing="5">THE DETAILS</text>
+  <line x1="290" y1="125" x2="410" y2="125" stroke="url(#gold)" stroke-width="1"/>
+  <g transform="translate(150,170)" font-family="Georgia,serif" font-size="12">
+    <text x="0" y="0" fill="#8a8050" letter-spacing="2" text-anchor="end">CEREMONY</text>
+    <text x="20" y="0" fill="#5a5040">Four o'clock in the afternoon</text>
+    <text x="0" y="28" fill="#8a8050" letter-spacing="2" text-anchor="end">VENUE</text>
+    <text x="20" y="28" fill="#5a5040">The Ashford Estate</text>
+    <text x="0" y="56" fill="#8a8050" letter-spacing="2" text-anchor="end">ADDRESS</text>
+    <text x="20" y="56" fill="#5a5040">12 Ocean Drive, Newport, RI</text>
+    <text x="0" y="84" fill="#8a8050" letter-spacing="2" text-anchor="end">ATTIRE</text>
+    <text x="20" y="84" fill="#5a5040">Black tie</text>
+    <text x="0" y="112" fill="#8a8050" letter-spacing="2" text-anchor="end">PARKING</text>
+    <text x="20" y="112" fill="#5a5040">Complimentary valet</text>
+    <text x="0" y="140" fill="#8a8050" letter-spacing="2" text-anchor="end">HOTELS</text>
+    <text x="20" y="140" fill="#5a5040">Hotel blocks available — see website</text>
+    <text x="0" y="168" fill="#8a8050" letter-spacing="2" text-anchor="end">WEBSITE</text>
+    <text x="20" y="168" fill="#5a5040">emilyandjames.wedding</text>
+  </g>
+  <text x="350" y="450" text-anchor="middle" font-family="Georgia,serif" font-size="8" fill="#c0b090" letter-spacing="4">LUXE TEMPLATES</text>
+</svg>

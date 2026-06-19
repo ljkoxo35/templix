@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 850">
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#c9ad60"/><stop offset="50%" stop-color="#e8d898"/><stop offset="100%" stop-color="#a88830"/></linearGradient>
+    <linearGradient id="olive" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#7d8f50"/><stop offset="100%" stop-color="#556a30"/></linearGradient>
+    <linearGradient id="olive2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#8f9f60"/><stop offset="100%" stop-color="#667a40"/></linearGradient>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#fefcfa"/><stop offset="100%" stop-color="#f6f2e8"/></linearGradient>
+  </defs>
+  <rect width="600" height="850" fill="url(#bg)"/>
+  <rect x="28" y="28" width="544" height="794" fill="none" stroke="url(#gold)" stroke-width="1.5"/>
+  <g transform="translate(32,32)"><path d="M0,38 C0,12 12,0 38,0" fill="none" stroke="url(#gold)" stroke-width="1.5"/></g>
+  <g transform="translate(568,32) scale(-1,1)"><path d="M0,38 C0,12 12,0 38,0" fill="none" stroke="url(#gold)" stroke-width="1.5"/></g>
+  <g transform="translate(32,818) scale(1,-1)"><path d="M0,38 C0,12 12,0 38,0" fill="none" stroke="url(#gold)" stroke-width="1.5"/></g>
+  <g transform="translate(568,818) scale(-1,-1)"><path d="M0,38 C0,12 12,0 38,0" fill="none" stroke="url(#gold)" stroke-width="1.5"/></g>
+  <text x="300" y="110" text-anchor="middle" font-family="Georgia,serif" font-size="22" fill="#3a3a2a" letter-spacing="5">DINNER</text>
+  <line x1="240" y1="128" x2="360" y2="128" stroke="url(#gold)" stroke-width="1"/>
+  <g transform="translate(80,180)" font-family="Georgia,serif" text-anchor="middle">
+    <text x="220" y="0" fill="#8a8050" font-size="13" letter-spacing="3">STARTER</text>
+    <text x="220" y="28" fill="#5a5040" font-size="11">Heirloom Tomato &amp; Burrata</text>
+    <text x="220" y="48" fill="#8a7a58" font-size="10">Basil oil · aged balsamic · micro greens</text>
+    <text x="220" y="100" fill="#8a8050" font-size="13" letter-spacing="3">ENTRÉE</text>
+    <text x="220" y="128" fill="#5a5040" font-size="11">Herb-Crusted Rack of Lamb</text>
+    <text x="220" y="148" fill="#8a7a58" font-size="10">Rosemary jus · roasted root vegetables</text>
+    <text x="220" y="170" fill="#8a7a58" font-size="9" font-style="italic">Vegetarian option: wild mushroom risotto</text>
+    <text x="220" y="222" fill="#8a8050" font-size="13" letter-spacing="3">DESSERT</text>
+    <text x="220" y="250" fill="#5a5040" font-size="11">Wedding Cake Trio</text>
+    <text x="220" y="270" fill="#8a7a58" font-size="10">Vanilla bean · dark chocolate · lemon</text>
+    <text x="220" y="340" fill="#8a8050" font-size="13" letter-spacing="3">DRINKS</text>
+    <text x="220" y="368" fill="#5a5040" font-size="11">Champagne Toast &amp; Open Bar</text>
+    <text x="220" y="388" fill="#8a7a58" font-size="10">Signature cocktail: The Ashford Spritz</text>
+  </g>
+  <text x="300" y="790" text-anchor="middle" font-family="Georgia,serif" font-size="8" fill="#c0b090" letter-spacing="4">LUXE TEMPLATES</text>
+</svg>
