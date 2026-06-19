@@ -1,0 +1,151 @@
+<!-- Boho Neutral Classroom Poster Bundle — 6 Posters -->
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  @page { size: letter; margin: 0; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #c8bfb0; display: flex; flex-direction: column; align-items: center; gap: 40px; padding: 40px; font-family: 'Inter', sans-serif; }
+  .poster {
+    background: #faf7f2;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.1);
+    position: relative; overflow: hidden;
+  }
+  .poster-label { text-align: center; font-size: 10px; color: #999; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 4px; }
+  .terracotta { color: #c47a5a; }
+  .sage { color: #8a9a6e; }
+  .dusty-rose { color: #b87a7a; }
+  .warm-tan { color: #c49a6c; }
+  .brown { color: #5c4030; }
+
+  /* ═══ 1. GROWTH MINDSET ═══ */
+  .mindset { width: 660px; height: 480px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 40px; }
+  .mindset .rainbow {
+    width: 200px; height: 100px; margin-bottom: 24px; position: relative;
+    border-bottom-left-radius: 100px; border-bottom-right-radius: 100px;
+    border: 4px solid #d4b896; border-top: none;
+  }
+  .mindset .rainbow::before {
+    content: ''; position: absolute; top: -8px; left: -8px; right: -8px; bottom: 8px;
+    border-bottom-left-radius: 108px; border-bottom-right-radius: 108px;
+    border: 3px solid #e0c8a8; border-top: none;
+  }
+  .mindset h1 { font-family: 'Playfair Display', serif; font-size: 36px; color: #5c4030; font-weight: 400; margin-bottom: 8px; letter-spacing: -0.5px; }
+  .mindset p { font-size: 15px; color: #8a7060; font-style: italic; }
+
+  /* ═══ 2. CLASSROOM RULES ═══ */
+  .rules { width: 660px; height: 480px; padding: 44px 56px; }
+  .rules h2 { font-family: 'Playfair Display', serif; font-size: 32px; color: #5c4030; text-align: center; font-weight: 400; margin-bottom: 28px; }
+  .rules .rule { display: flex; align-items: center; gap: 16px; margin-bottom: 18px; font-size: 16px; color: #5c4030; }
+  .rules .rule .dot { width: 28px; height: 28px; border-radius: 50%; background: #f0e4d4; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 14px; color: #c47a5a; flex-shrink: 0; }
+
+  /* ═══ 3. VOICE LEVELS ═══ */
+  .voice { width: 500px; height: 640px; padding: 40px 44px; }
+  .voice h2 { font-family: 'Playfair Display', serif; font-size: 30px; color: #5c4030; text-align: center; font-weight: 400; margin-bottom: 32px; }
+  .voice .level { display: flex; align-items: center; gap: 20px; margin-bottom: 24px; }
+  .voice .num { width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 24px; color: #fff; flex-shrink: 0; }
+  .voice .num.v0 { background: #c47a5a; }
+  .voice .num.v1 { background: #d4986a; }
+  .voice .num.v2 { background: #c49a6c; }
+  .voice .num.v3 { background: #b89a5a; }
+  .voice .level h4 { font-size: 16px; color: #5c4030; margin-bottom: 2px; }
+  .voice .level p { font-size: 12px; color: #8a7060; }
+
+  /* ═══ 4. CLASSROOM JOBS ═══ */
+  .jobs { width: 660px; height: 480px; padding: 40px 48px; }
+  .jobs h2 { font-family: 'Playfair Display', serif; font-size: 30px; color: #5c4030; text-align: center; font-weight: 400; margin-bottom: 28px; }
+  .jobs .jobs-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 32px; }
+  .jobs .job-item { display: flex; align-items: center; gap: 12px; font-size: 15px; color: #5c4030; padding: 8px 14px; background: #fcf8f4; border-radius: 8px; border: 1px solid #f0e4d4; }
+
+  /* ═══ 5. ALPHABET BANNER ═══ */
+  .alphabet { width: 760px; height: 280px; padding: 30px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: center; }
+  .alphabet .letter { width: 48px; height: 56px; display: flex; align-items: center; justify-content: center; border-radius: 8px; font-family: 'Playfair Display', serif; font-size: 22px; color: #5c4030; background: #fcf8f4; border: 1px solid #f0e4d4; }
+
+  /* ═══ 6. BIRTHDAY CHART ═══ */
+  .birthday { width: 660px; height: 480px; padding: 40px 48px; }
+  .birthday h2 { font-family: 'Playfair Display', serif; font-size: 30px; color: #5c4030; text-align: center; font-weight: 400; margin-bottom: 28px; }
+  .birthday .month-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+  .birthday .month { text-align: center; padding: 12px 8px; background: #fcf8f4; border-radius: 8px; border: 1px solid #f0e4d4; }
+  .birthday .month h4 { font-size: 12px; color: #c47a5a; margin-bottom: 4px; letter-spacing: 1px; }
+  .birthday .month p { font-size: 11px; color: #8a7060; line-height: 1.5; }
+
+  .brand { text-align: center; font-size: 9px; color: #c0b090; letter-spacing: 3px; margin-top: 8px; }
+</style></head><body>
+
+<div class="poster-label">01 — Growth Mindset Poster</div>
+<div class="poster mindset">
+  <div class="rainbow"></div>
+  <h1>Mistakes Are Proof<br>That You Are Trying</h1>
+  <p>— Growth Mindset —</p>
+  <div class="brand" style="position:absolute;bottom:16px;right:24px">CLASSROOM CO.</div>
+</div>
+
+<div class="poster-label">02 — Classroom Rules</div>
+<div class="poster rules">
+  <h2>Our Classroom Rules</h2>
+  <div class="rule"><span class="dot">1</span> Raise your hand before speaking</div>
+  <div class="rule"><span class="dot">2</span> Listen when others are talking</div>
+  <div class="rule"><span class="dot">3</span> Keep your hands and feet to yourself</div>
+  <div class="rule"><span class="dot">4</span> Always try your best</div>
+  <div class="rule"><span class="dot">5</span> Be kind &amp; respectful to everyone</div>
+  <div class="brand" style="position:absolute;bottom:16px;right:24px">CLASSROOM CO.</div>
+</div>
+
+<div class="poster-label">03 — Voice Levels Chart</div>
+<div class="poster voice">
+  <h2>Voice Levels</h2>
+  <div class="level"><div class="num v0">0</div><div><h4>Silent</h4><p>No talking — independent work</p></div></div>
+  <div class="level"><div class="num v1">1</div><div><h4>Whisper</h4><p>Partner talk only</p></div></div>
+  <div class="level"><div class="num v2">2</div><div><h4>Table Talk</h4><p>Small group discussion</p></div></div>
+  <div class="level"><div class="num v3">3</div><div><h4>Speaker</h4><p>Presenting to the class</p></div></div>
+  <div class="brand" style="position:absolute;bottom:16px;right:24px">CLASSROOM CO.</div>
+</div>
+
+<div class="poster-label">04 — Classroom Jobs</div>
+<div class="poster jobs">
+  <h2>Classroom Jobs</h2>
+  <div class="jobs-grid">
+    <div class="job-item">📋 Line Leader</div>
+    <div class="job-item">🚪 Door Holder</div>
+    <div class="job-item">📚 Librarian</div>
+    <div class="job-item">🧹 Clean-Up Crew</div>
+    <div class="job-item">📝 Board Writer</div>
+    <div class="job-item">📦 Supply Manager</div>
+    <div class="job-item">💡 Light Monitor</div>
+    <div class="job-item">📬 Messenger</div>
+    <div class="job-item">🌱 Plant Caretaker</div>
+    <div class="job-item">📅 Calendar Helper</div>
+  </div>
+  <div class="brand" style="position:absolute;bottom:16px;right:24px">CLASSROOM CO.</div>
+</div>
+
+<div class="poster-label">05 — Boho Alphabet Banner</div>
+<div class="poster alphabet">
+  <div class="letter">A</div><div class="letter">B</div><div class="letter">C</div><div class="letter">D</div><div class="letter">E</div>
+  <div class="letter">F</div><div class="letter">G</div><div class="letter">H</div><div class="letter">I</div><div class="letter">J</div>
+  <div class="letter">K</div><div class="letter">L</div><div class="letter">M</div><div class="letter">N</div><div class="letter">O</div>
+  <div class="letter">P</div><div class="letter">Q</div><div class="letter">R</div><div class="letter">S</div><div class="letter">T</div>
+  <div class="letter">U</div><div class="letter">V</div><div class="letter">W</div><div class="letter">X</div><div class="letter">Y</div><div class="letter">Z</div>
+  <div class="brand" style="position:absolute;bottom:8px;right:16px">CLASSROOM CO.</div>
+</div>
+
+<div class="poster-label">06 — Birthday Chart</div>
+<div class="poster birthday">
+  <h2>Our Birthdays</h2>
+  <div class="month-grid">
+    <div class="month"><h4>JAN</h4><p>——</p></div>
+    <div class="month"><h4>FEB</h4><p>——</p></div>
+    <div class="month"><h4>MAR</h4><p>——</p></div>
+    <div class="month"><h4>APR</h4><p>——</p></div>
+    <div class="month"><h4>MAY</h4><p>——</p></div>
+    <div class="month"><h4>JUN</h4><p>——</p></div>
+    <div class="month"><h4>JUL</h4><p>——</p></div>
+    <div class="month"><h4>AUG</h4><p>——</p></div>
+    <div class="month"><h4>SEP</h4><p>——</p></div>
+    <div class="month"><h4>OCT</h4><p>——</p></div>
+    <div class="month"><h4>NOV</h4><p>——</p></div>
+    <div class="month"><h4>DEC</h4><p>——</p></div>
+  </div>
+  <div class="brand" style="position:absolute;bottom:16px;right:24px">CLASSROOM CO.</div>
+</div>
+
+</body></html>
